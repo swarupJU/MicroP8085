@@ -46,15 +46,7 @@ module IDecoder(
         is_mov         = 0;
 
         casez (IR)
-
-   // === MVI C, 05H (explicit encoding for test/debug) ===
-//        8'h0E: begin
-//            reg_write     = 1;
-//            use_immediate = 1;
-//            dst_reg       = 3'b001;
-//            inst_length   = 2;
-//        end
-
+            
         // === MOV R1, R2 ===
         8'b01??????: begin
             reg_write = 1;
@@ -227,19 +219,6 @@ module IDecoder(
             branch_type = 4'b1000;
             inst_length = 2'b11;
         end
-
-
-        // === ADD C (explicit encoding for test/debug) ===
-//        8'h81: begin
-//            reg_write   = 1;
-//            use_alu     = 1;
-//            alu_op      = OP_ADD;
-//            src_reg     = 3'b001; // C
-//            dst_reg     = 3'b111; // A
-//        end
-
-     
-
         default: begin
             // Invalid or unimplemented opcode
         end
