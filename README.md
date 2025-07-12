@@ -37,7 +37,7 @@ Category: Miscellaneous
 
 ---
 ## File Structure
-├── src/
+├── src files/
 
 │ ├── IDecoder.v - Instruction decoder module
 
