@@ -60,7 +60,7 @@ if (rst) begin
     // === SUB C ===
     mem[16'h000E] <= 8'h91;  // SUB C  ? A = 05 - 01 = 04
 
-    // === HALT (if you have implemented it) ===
+    // === HALT ===
     mem[16'h000F] <= 8'h76;  // HLT
 end
 
