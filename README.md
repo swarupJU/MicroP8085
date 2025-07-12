@@ -4,7 +4,7 @@ This project is a complete Verilog HDL implementation of the Intel 8085 8-bit mi
 
 Built to simulate instruction-level execution, this design is modular and can be tested using Verilog simulation tools.
 
----
+
 
 ## Features Implemented
 
@@ -55,6 +55,15 @@ Category: Miscellaneous
 
 │ └── tb_MP85.v - Testbench for top-level processor
 
+## Limitations
+
+This implementation mimics the Intel 8085 microprocessor but with a few limitations:
+
+- Interrupts are not currently supported.
+- The number of clock cycles for some instructions may differ slightly from the original 8085 processor.
+
+---
+
 ## License
 
 Copyright 2025 Swarup Saha Roy
@@ -80,11 +89,11 @@ Contributions are welcome. You can extend instruction support, refactor modules,
 
 ## Author
 
-Developed by:Swarup Saha Roy
+Developed by: Swarup Saha Roy
 
 Contact: swarupsaharoy2004@gmail.com 
 
-Institution:Jadavpur University
+Institution: Jadavpur University
 
 
 
